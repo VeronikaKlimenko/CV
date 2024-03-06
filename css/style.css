@@ -1,32 +1,33 @@
+/* For mobile */
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
+/*FOR ALL STYLES:*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+li {
+  font-family: "DM Mono", monospace;
+  font-weight: bold;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-}
-.container {
-  display: flex;
-  gap: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-aside {
-  padding: 30px 20px 20px 20px;
-  background-color: #b1afb1;
-  width: 45%;
-  text-align: center;
-  justify-content: center;
-  color: white;
-}
-
-main {
-  background-color: white;
-  flex: 1;
-  padding-top: 30px;
 }
 
 h1 {
@@ -39,6 +40,26 @@ h1 {
   margin-top: 30px;
   margin-bottom: 20px;
   word-wrap: break-word;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*FOR LEFT SIDE:*/
+aside {
+  padding: 20px;
+  background-color: #b1afb1;
+  text-align: center;
+  padding-top: 30px;
+  justify-content: center;
+  color: white;
+}
+
+aside li {
+  margin-left: 20px;
 }
 
 .Image-info h2 {
@@ -57,9 +78,9 @@ h1 {
 }
 
 .container-inside-aside {
-  width: 500px;
-  max-width: 100%;
+  margin: 0 auto;
 }
+
 aside hr {
   border: none;
   border-top: 3px solid white;
@@ -80,12 +101,14 @@ aside hr {
   margin: 0 auto;
   font-weight: 700;
 }
+
 .Skills-container {
   width: 450px;
   text-align: left;
   margin: 0 auto;
   max-width: 100%;
 }
+
 .Personal-container {
   width: 450px;
   text-align: left;
@@ -93,13 +116,16 @@ aside hr {
   max-width: 100%;
   word-wrap: break-word;
 }
-li {
-  font-family: "DM Mono", monospace;
-  font-weight: bold;
-}
+
 /*right side*/
+main {
+  background-color: white;
+  flex: 1;
+  padding: 0 20px 20px 20px;
+}
 .main-container {
-  width: 700px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 main h2 {
   margin: 30px auto;
@@ -115,6 +141,13 @@ main hr {
   font-weight: 700;
   margin-top: 10px;
 }
+
 main li {
   margin-left: 30px;
+}
+main p,
+main li,
+main dt,
+main dd {
+  word-wrap: break-word;
 }
